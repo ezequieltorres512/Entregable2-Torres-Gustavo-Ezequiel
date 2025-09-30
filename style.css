@@ -1,0 +1,149 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#menu button {
+    padding: 10px 20px;
+    border: none;
+    background: #3498db;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#menu button:hover {
+    background: #2980b9;
+}
+
+.seccion {
+    display: none;
+    margin-top: 20px;
+}
+
+.contenedorTarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+    width: 200px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+}
+
+.card h4 {
+    margin: 10px 0;
+    color: #2c3e50;
+}
+
+.card p {
+    margin: 5px 0;
+    color: #34495e;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.card-buttons button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.card-buttons .eliminar {
+    background: #e74c3c;
+    color: white;
+}
+
+.card-buttons .eliminar:hover {
+    background: #c0392b;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input, form button {
+    padding: 8px 10px;
+    font-size: 1em;
+    width: 180px;
+}
+
+form button[type="submit"] {
+    background: #27ae60;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button[type="submit"]:hover {
+    background: #1e8449;
+}
+
+form button[type="button"] {
+    background: #95a5a6;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+form button[type="button"]:hover {
+    background: #7f8c8d;
+}
+
+#resumen p {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simulador de Compras para el Asado</h1>
+    <p>Calcula el total de productos y divide los gastos entre personas indicando quién debe o puso de más.</p>
+
+    <!-- Menú de secciones -->
+    <div id="menu">
+        <button data-seccion="productos">Productos</button>
+        <button data-seccion="aportes">Aportes</button>
+        <button data-seccion="resumen">Resumen</button>
+        <button id="limpiarStorage">Limpiar Datos</button>
+    </div>
+
+    <!-- Sección Productos -->
+    <div class="seccion" id="productos">
+        <form id="formProducto">
+            <input type="text" id="prodNombre" placeholder="Nombre producto" required>
+            <input type="number" id="prodCantidad" placeholder="Cantidad" required>
+            <input type="number" id="prodPrecio" placeholder="Precio" required>
+            <button type="submit">Agregar</button>
+            <button type="button" id="limpiarProducto">Limpiar</button>
+        </form>
+        <div id="productosCtn" class="contenedorTarjetas"></div>
+    </div>
+
+    <!-- Sección Aportes -->
+    <div class="seccion" id="aportes">
+        <form id="formAporte">
+            <input type="text" id="aporteNombre" placeholder="Nombre persona" required>
+            <input type="number" id="aporteMonto" placeholder="Monto" required>
+            <button type="submit">Agregar</button>
+            <button type="button" id="limpiarAporte">Limpiar</button>
+        </form>
+        <div id="aportesCtn" class="contenedorTarjetas"></div>
+    </div>
+
+    <!-- Sección Resumen -->
+    <div class="seccion" id="resumen">
+        <div id="resumenCtn" class="contenedorTarjetas"></div>
+    </div>
+
+    <script src="js/Producto.js"></script>
+    <script src="js/Aporte.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
